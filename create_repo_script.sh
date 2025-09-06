@@ -4,7 +4,8 @@ set -e
 
 # Create directory structure
 mkdir -p app/src/main/java/com/jared747/assist/ui/theme
-mkdir -p app/src/main/AndroidManifest.xml
+# Ensure main source directory exists instead of creating a directory named AndroidManifest.xml.
+mkdir -p app/src/main
 mkdir -p backend/src/main/kotlin/com/jared747/assist
 mkdir -p backend/src/main/resources
 mkdir -p infra
